@@ -1,0 +1,109 @@
+import { Box } from "@mui/material";
+import React, { useEffect } from "react";
+import Accordion from "@mui/material/Accordion";
+import AccordionActions from "@mui/material/AccordionActions";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Button from "@mui/material/Button";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
+
+const Description = () => {
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  return (
+    <Box>
+      <Typography className="description-title">
+        {t("description.title")}
+      </Typography>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: "100%",
+          padding: 2,
+        }}
+        data-aos="fade-right"
+      >
+        {/* Primer Box */}
+        <Box
+          component="img"
+          src="/static/agro-1.jpg"
+          alt="Semicírculo decorativo"
+          sx={{
+            padding: 2,
+            width: "45%",
+            borderRadius: "10px", // Borde redondeado
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Sombreado suave
+          }}
+        ></Box>
+
+        {/* Segundo Box */}
+        <Box
+          sx={{
+            padding: 2,
+            width: "45%",
+          }}
+        >
+          <Typography className="community-text-3">
+            <span style={{ fontWeight: "bold", color: "#598428 " }}>
+              AGROTECH-BIO{" "}
+            </span>{" "}
+            {t("description.text-1")}
+          </Typography>
+          <Typography className="community-text-4">
+            {t("description.text-2")}
+          </Typography>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: "100%",
+          padding: 2,
+        }}
+        data-aos="fade-left"
+      >
+        {/* Primer Box */}
+        <Box
+          sx={{
+            padding: 2,
+            width: "45%",
+          }}
+        >
+          <Typography className="community-text-3">
+            <span style={{ fontWeight: "bold", color: "#598428 " }}>
+              AGROTECH-BIO{" "}
+            </span>{" "}
+            {t("description.text-3")}
+          </Typography>
+        </Box>
+
+        {/* Segundo Box */}
+        <Box
+          component="img"
+          src="/static/agro-2.jpeg"
+          alt="Semicírculo decorativo"
+          sx={{
+            padding: 2,
+            width: "45%",
+            borderRadius: "10px", // Borde redondeado
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Sombreado suave
+          }}
+        ></Box>
+      </Box>
+    </Box>
+  );
+};
+
+export default Description;

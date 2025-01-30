@@ -1,0 +1,114 @@
+import { Button, Container } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import Navbar from "../components/navbar";
+
+import Box from "@mui/material/Box";
+import Fab from "@mui/material/Fab";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+
+import * as turf from "@turf/turf";
+import "../styles/home.css";
+import CarruselPrincipal from "../components/carruselPrincipal";
+import Description from "../components/description";
+import Products from "../components/products";
+import ProductsCard from "../components/products-card";
+import Contact from "../components/contact";
+import Footer from "../components/footer";
+import { useTranslation } from "react-i18next";
+
+const Home = () => {
+  const [coords, setCoords] = useState(null);
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        setCoords({ lat: latitude, lon: longitude }); // Guardamos en el estado
+      },
+      (error) => {
+        console.error("Error obteniendo la geolocalización:", error.message);
+      }
+    );
+  }, []);
+
+  useEffect(() => {
+    // debugger;
+    if (!coords) return; // Esperar hasta que tengamos coordenadas
+
+    const findCountry = async () => {
+      try {
+        const response = await fetch("/countries.geojson");
+        const geojson = await response.json();
+
+        if (
+          !geojson ||
+          geojson.type !== "FeatureCollection" ||
+          !Array.isArray(geojson.features)
+        ) {
+          throw new Error("El archivo GeoJSON no tiene un formato válido");
+        }
+
+        const point = turf.point([coords.lon, coords.lat]); // Usamos las coordenadas del estado
+
+        for (const feature of geojson.features) {
+          const polygon = turf.feature(feature.geometry);
+          if (turf.booleanPointInPolygon(point, polygon)) {
+            if (feature.properties.ADMIN === "Argentina") {
+              i18n.changeLanguage("es");
+            } else {
+              i18n.changeLanguage("pt");
+            }
+            return;
+          }
+        }
+      } catch (error) {
+        console.error("Error al cargar el archivo GeoJSON:", error);
+      }
+    };
+
+    findCountry();
+  }, [coords]); // Se ejecuta cuando coords cambia
+
+  const { t, i18n } = useTranslation();
+  // const changeLanguage = (lng) => {
+  //   i18n.changeLanguage(lng);
+  // };
+
+  const handleWhatsAppRedirect = () => {
+    const whatsappURL = `https://wa.me/5493834400061`; // Cambia 34612345678 por tu número de WhatsApp
+
+    window.open(whatsappURL, "_blank");
+  };
+
+  return (
+    <>
+      <Navbar />
+      <CarruselPrincipal />
+      <Container sx={{ marginTop: "5rem" }}>
+        <Description />
+        <Products />
+        <ProductsCard />
+        <Contact />
+      </Container>
+      <Footer />
+      {/* Botón flotante Fab */}
+      <Fab
+        onClick={handleWhatsAppRedirect}
+        variant="extended"
+        sx={{
+          position: "fixed",
+          bottom: 16,
+          right: 16,
+          zIndex: 1000,
+          background: "#43CD66",
+          color: "#fff",
+        }}
+      >
+        <WhatsAppIcon sx={{ mr: 1 }} />
+        {t("whatsapp.text")}
+      </Fab>
+    </>
+  );
+};
+
+export default Home;
