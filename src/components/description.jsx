@@ -1,13 +1,6 @@
 import { Box } from "@mui/material";
 import React, { useEffect } from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionActions from "@mui/material/AccordionActions";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Button from "@mui/material/Button";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
@@ -41,8 +34,8 @@ const Description = () => {
           sx={{
             padding: 2,
             width: "45%",
-            borderRadius: "10px", // Borde redondeado
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Sombreado suave
+            borderRadius: "10px", 
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
           }}
         ></Box>
 
@@ -97,8 +90,8 @@ const Description = () => {
           sx={{
             padding: 2,
             width: "45%",
-            borderRadius: "10px", // Borde redondeado
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Sombreado suave
+            borderRadius: "10px", 
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
           }}
         ></Box>
       </Box>

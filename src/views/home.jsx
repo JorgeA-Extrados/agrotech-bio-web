@@ -1,8 +1,6 @@
-import { Button, Container } from "@mui/material";
+import { Container } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
-
-import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
@@ -23,7 +21,7 @@ const Home = () => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const { latitude, longitude } = position.coords;
-        setCoords({ lat: latitude, lon: longitude }); // Guardamos en el estado
+        setCoords({ lat: latitude, lon: longitude }); 
       },
       (error) => {
         console.error("Error obteniendo la geolocalización:", error.message);
@@ -32,8 +30,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    // debugger;
-    if (!coords) return; // Esperar hasta que tengamos coordenadas
+    if (!coords) return; 
 
     const findCountry = async () => {
       try {
@@ -48,7 +45,7 @@ const Home = () => {
           throw new Error("El archivo GeoJSON no tiene un formato válido");
         }
 
-        const point = turf.point([coords.lon, coords.lat]); // Usamos las coordenadas del estado
+        const point = turf.point([coords.lon, coords.lat]); 
 
         for (const feature of geojson.features) {
           const polygon = turf.feature(feature.geometry);
@@ -67,15 +64,12 @@ const Home = () => {
     };
 
     findCountry();
-  }, [coords]); // Se ejecuta cuando coords cambia
+  }, [coords]); 
 
   const { t, i18n } = useTranslation();
-  // const changeLanguage = (lng) => {
-  //   i18n.changeLanguage(lng);
-  // };
 
   const handleWhatsAppRedirect = () => {
-    const whatsappURL = `https://wa.me/5493834400061`; // Cambia 34612345678 por tu número de WhatsApp
+    const whatsappURL = `https://wa.me/5493834400061`; 
 
     window.open(whatsappURL, "_blank");
   };

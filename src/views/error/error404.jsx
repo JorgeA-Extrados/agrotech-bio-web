@@ -6,7 +6,7 @@ const ErrorNotFound = () => {
   const navigate = useNavigate();
 
   const handleVolver = async () => {
-    navigate("/login");
+    navigate("/");
   };
 
   return (

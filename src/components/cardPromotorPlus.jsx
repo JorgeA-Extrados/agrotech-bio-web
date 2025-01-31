@@ -29,8 +29,8 @@ const CardPromotorPlus = () => {
           sx={{
             padding: 2,
             width: "45%",
-            borderRadius: "10px", // Borde redondeado
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Sombreado suave
+            borderRadius: "10px", 
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
           }}
         ></Box>
 
@@ -42,10 +42,6 @@ const CardPromotorPlus = () => {
           }}
         >
           <Typography className="promotor-text-card">
-            {/* <span style={{ fontWeight: "bold", color: "#598428 " }}>
-              {t("promotor.title-list")}
-              <br />
-            </span>{" "} */}
             {t("promotor.1-list") === " " ? (
               <>{t("promotor.title-list")}</>
             ) : (
@@ -75,10 +71,6 @@ const CardPromotorPlus = () => {
                 {t("promotor.text-3")}
               </>
             )}
-            {/* <span style={{ fontWeight: "bold", color: "#598428 " }}>
-              {t("promotor.text-2")} <br />
-            </span>{" "}
-            {t("promotor.text-3")} */}
           </Typography>
         </Box>
       </Box>
@@ -112,11 +104,6 @@ const CardPromotorPlus = () => {
                 {t("promotor.text-5")}
               </>
             )}
-            {/* <span style={{ fontWeight: "bold", color: "#598428 " }}>
-              {t("promotor.text-4")}
-              <br />{" "}
-            </span>{" "}
-            {t("promotor.text-5")} */}
           </Typography>
           <Typography className="promotor-text-card">
             <span style={{ fontWeight: "bold", color: "#598428 " }}>
@@ -135,8 +122,8 @@ const CardPromotorPlus = () => {
           sx={{
             padding: 2,
             width: "45%",
-            borderRadius: "10px", // Borde redondeado
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Sombreado suave
+            borderRadius: "10px", 
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
           }}
         ></Box>
       </Box>

@@ -7,13 +7,12 @@ const Footer = () => {
   const { t } = useTranslation();
   return (
     <Box component="footer" className="footer">
-      {/* Middle Section */}
       <Grid2
         container
         sx={{
-          justifyContent: "center", // Distribuye los elementos al inicio y al final
-          alignItems: "center", // Alinea verticalmente
-          padding: 2, // Opcional: Espaciado dentro del contenedor
+          justifyContent: "center",
+          alignItems: "center",
+          padding: 2, 
         }}
       >
         <Typography className="footer-text">©2019 by Agrotech-Bio.</Typography>

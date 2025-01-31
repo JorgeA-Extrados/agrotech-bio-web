@@ -27,8 +27,8 @@ const Biorhiza = () => {
           sx={{
             padding: 2,
             width: "45%",
-            borderRadius: "10px", // Borde redondeado
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Sombreado suave
+            borderRadius: "10px", 
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
           }}
         ></Box>
 

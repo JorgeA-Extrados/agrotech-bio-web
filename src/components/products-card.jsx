@@ -1,5 +1,4 @@
 import {
-  Avatar,
   Card,
   CardContent,
   CardMedia,

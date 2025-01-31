@@ -37,9 +37,9 @@ const Contact = () => {
         *Teléfono:* ${telefono}
         *Motivo:* ${motivo}
         *Mensaje:* ${mensaje}
-        `.replace(/\n/g, "%0A"); // Codificar saltos de línea
+        `.replace(/\n/g, "%0A"); 
 
-    const whatsappURL = `https://wa.me/5493834400061?text=${whatsappMessage}`; // Cambia 34612345678 por tu número de WhatsApp
+    const whatsappURL = `https://wa.me/5493834400061?text=${whatsappMessage}`; 
 
     window.open(whatsappURL, "_blank");
 

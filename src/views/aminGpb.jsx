@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 const AminGpb = () => {
   const { t } = useTranslation();
   const handleWhatsAppRedirect = () => {
-    const whatsappURL = `https://wa.me/5493834400061`; // Cambia 34612345678 por tu número de WhatsApp
+    const whatsappURL = `https://wa.me/5493834400061`; 
 
     window.open(whatsappURL, "_blank");
   };

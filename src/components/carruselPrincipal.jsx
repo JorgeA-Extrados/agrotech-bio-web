@@ -14,47 +14,6 @@ const CarruselPrincipal = () => {
   };
 
   return (
-    // <div className="slider-container" style={{marginTop: "2rem"}}>
-    //   <Slider {...settings}>
-    //     <div>
-    //       <Box
-    //         component="img"
-    //         src="/static/agro-1.jpg"
-    //         alt="Logo"
-    //         sx={{
-    //           height: "auto",
-    //           width: "auto",
-    //           display: { xs: "none", md: "flex" },
-    //         }}
-    //       />
-    //     </div>
-    //     <div>
-    //       <Box
-    //         component="img"
-    //         src="/static/agro-2.jpeg"
-    //         alt="Logo"
-    //         sx={{
-    //           height: "auto",
-    //           width: "auto",
-    //           display: { xs: "none", md: "flex" },
-    //         }}
-    //       />
-    //     </div>
-    //     <div>
-    //       <Box
-    //         component="img"
-    //         src="/static/agro-3.jpeg"
-    //         alt="Logo"
-    //         sx={{
-    //           height: "auto",
-    //           width: "auto",
-    //           display: { xs: "none", md: "flex" },
-    //         }}
-    //       />
-    //     </div>
-    //   </Slider>
-    // </div>
-
     <div className="slider-container" style={{ marginTop: "2rem", maxWidth: "100%", overflow: "hidden" }}>
       <Slider {...settings}>
         <div>
@@ -62,7 +21,7 @@ const CarruselPrincipal = () => {
             sx={{
               position: "relative",
               width: "100%",
-              height: "400px", // Largo configurable
+              height: "400px",
             }}
           >
             <Box
@@ -72,7 +31,7 @@ const CarruselPrincipal = () => {
               sx={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover", // Para que la imagen se ajuste al contenedor
+                objectFit: "cover",
               }}
             />
             <Box
@@ -80,7 +39,7 @@ const CarruselPrincipal = () => {
                 position: "absolute",
                 bottom: "20px",
                 left: "20px",
-                backgroundColor: "rgba(89, 132, 40, 0.5)", // Fondo semi-transparente para el texto
+                backgroundColor: "rgba(89, 132, 40, 0.5)",
                 color: "white",
                 padding: "10px",
                 borderRadius: "5px",
@@ -96,7 +55,7 @@ const CarruselPrincipal = () => {
             sx={{
               position: "relative",
               width: "100%",
-              height: "400px", // Largo configurable
+              height: "400px",
             }}
           >
             <Box
@@ -106,7 +65,7 @@ const CarruselPrincipal = () => {
               sx={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover", // Para que la imagen se ajuste al contenedor
+                objectFit: "cover",
               }}
             />
             <Box
@@ -114,7 +73,7 @@ const CarruselPrincipal = () => {
                 position: "absolute",
                 bottom: "20px",
                 left: "20px",
-                backgroundColor: "rgba(89, 132, 40, 0.5)", // Fondo semi-transparente para el texto
+                backgroundColor: "rgba(89, 132, 40, 0.5)",
                 color: "white",
                 padding: "10px",
                 borderRadius: "5px",
@@ -130,7 +89,7 @@ const CarruselPrincipal = () => {
             sx={{
               position: "relative",
               width: "100%",
-              height: "400px", // Largo configurable
+              height: "400px",
             }}
           >
             <Box
@@ -140,7 +99,7 @@ const CarruselPrincipal = () => {
               sx={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover", // Para que la imagen se ajuste al contenedor
+                objectFit: "cover",
               }}
             />
             <Box
@@ -148,7 +107,7 @@ const CarruselPrincipal = () => {
                 position: "absolute",
                 bottom: "20px",
                 left: "20px",
-                backgroundColor: "rgba(89, 132, 40, 0.5)", // Fondo semi-transparente para el texto
+                backgroundColor: "rgba(89, 132, 40, 0.5)",
                 color: "white",
                 padding: "10px",
                 borderRadius: "5px",
