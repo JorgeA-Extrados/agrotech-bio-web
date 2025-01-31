@@ -42,6 +42,11 @@
   line-height: 146% !important;
 }
 
+.products-text-important-2 {
+  color: #598428 !important;
+  font-weight: bold !important;
+}
+
 .products-card-title {
   color: #c74300 !important;
   font-weight: 500 !important;
@@ -138,5 +143,13 @@
 @media (max-width: 600px) {
   .nav-bar {
     padding-bottom: 1.5rem !important;
+  }
+
+  .carruselPrincipal-text {
+    font-size: 2rem !important;
+  }
+
+  .description-title {
+    font-size: 2.5rem !important;
   }
 }

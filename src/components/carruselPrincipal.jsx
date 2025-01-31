@@ -6,15 +6,22 @@ import { Box, Typography } from "@mui/material";
 
 const CarruselPrincipal = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    pauseOnHover: false,
   };
 
   return (
-    <div className="slider-container" style={{ marginTop: "2rem", maxWidth: "100%", overflow: "hidden" }}>
+    <div
+      className="slider-container"
+      style={{ marginTop: "2rem", maxWidth: "100%", overflow: "hidden" }}
+    >
       <Slider {...settings}>
         <div>
           <Box
@@ -45,7 +52,9 @@ const CarruselPrincipal = () => {
                 borderRadius: "5px",
               }}
             >
-              <Typography className="carruselPrincipal-text">AGROTECH-BIO</Typography>
+              <Typography className="carruselPrincipal-text">
+                AGROTECH-BIO
+              </Typography>
             </Box>
           </Box>
         </div>
@@ -79,7 +88,9 @@ const CarruselPrincipal = () => {
                 borderRadius: "5px",
               }}
             >
-              <Typography className="carruselPrincipal-text">AGROTECH-BIO</Typography>
+              <Typography className="carruselPrincipal-text">
+                AGROTECH-BIO
+              </Typography>
             </Box>
           </Box>
         </div>
@@ -113,7 +124,9 @@ const CarruselPrincipal = () => {
                 borderRadius: "5px",
               }}
             >
-              <Typography className="carruselPrincipal-text">AGROTECH-BIO</Typography>
+              <Typography className="carruselPrincipal-text">
+                AGROTECH-BIO
+              </Typography>
             </Box>
           </Box>
         </div>

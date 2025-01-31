@@ -11,10 +11,17 @@ const AminGpbCard = () => {
         <br /> {t("amin.sub-title")}
         <br /> {t("amin.sub-title-2")}
       </Typography>
-      <Typography className="promotor-text">{t("amin.text")}</Typography>
+      {/* <Typography className="promotor-text">{t("amin.text")}</Typography> */}
+      <Typography
+        className="promotor-text"
+        dangerouslySetInnerHTML={{
+          __html: t("amin.text"),
+        }}
+      />
       <Box
         sx={{
           display: "flex",
+          flexDirection: { xs: "column", md: "row" },
           justifyContent: "space-between",
           alignItems: "center",
           width: "100%",
@@ -28,9 +35,10 @@ const AminGpbCard = () => {
           alt="Semicírculo decorativo"
           sx={{
             padding: 2,
-            width: "45%",
-            borderRadius: "10px", 
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
+            width: { xs: "100%", md: "45%" },
+            marginRight: { xs: "7%", md: 0 },
+            borderRadius: "10px",
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
           }}
         ></Box>
 
@@ -38,10 +46,12 @@ const AminGpbCard = () => {
         <Box
           sx={{
             padding: 2,
-            width: "45%",
+            width: { xs: "90%", md: "45%" },
+            marginRight: { xs: "7%", md: 0 },
+            textAlign: { xs: "center", md: "left" },
           }}
         >
-          <Typography className="promotor-text-card">
+          {/* <Typography className="promotor-text-card">
             {t("amin.text-2") === " " ? (
               <>
                 <span style={{ fontWeight: "bold", color: "#598428 " }}>
@@ -74,7 +84,43 @@ const AminGpbCard = () => {
                 </ul>
               </>
             )}
-          </Typography>
+          </Typography> */}
+          <Typography
+            className="promotor-text-card"
+            dangerouslySetInnerHTML={{
+              __html:
+                t("amin.text-2") === " "
+                  ? `
+          <span style="font-weight: bold; color: #598428;">
+            ${t("amin.title-list")}
+            <br />
+          </span>
+          <ul>
+            <li>${t("amin.1-list")}</li>
+            <li>${t("amin.2-list")}</li>
+            <li>${t("amin.3-list")}</li>
+            <li>${t("amin.4-list")}</li>
+            <li>${t("amin.5-list")}</li>
+            <li>${t("amin.6-list")}</li>
+            <li>${t("amin.7-list")}</li>
+            <li>${t("amin.8-list")}</li>
+          </ul>
+        `
+                  : `
+          <span style="font-weight: bold; color: #598428;">
+            ${t("amin.title-list")}
+            <br />
+          </span>
+          <ul>
+            <li>${t("amin.1-list")}</li>
+            <li>${t("amin.2-list")}</li>
+            <li>${t("amin.3-list")}</li>
+            <li>${t("amin.4-list")}</li>
+            <li>${t("amin.5-list")}</li>
+          </ul>
+        `,
+            }}
+          />
           {t("amin.text-2") === " " ? null : (
             <Typography className="promotor-text-card">
               <span style={{ fontWeight: "bold", color: "#598428 " }}>
@@ -89,6 +135,7 @@ const AminGpbCard = () => {
         <Box
           sx={{
             display: "flex",
+            flexDirection: { xs: "column-reverse", md: "row" },
             justifyContent: "space-between",
             alignItems: "center",
             width: "100%",
@@ -99,7 +146,9 @@ const AminGpbCard = () => {
           <Box
             sx={{
               padding: 2,
-              width: "45%",
+              width: { xs: "90%", md: "45%" },
+              marginRight: { xs: "7%", md: 0 },
+              textAlign: { xs: "center", md: "left" },
             }}
           >
             <Typography className="promotor-text-card">
@@ -124,8 +173,9 @@ const AminGpbCard = () => {
             alt="Semicírculo decorativo"
             sx={{
               padding: 2,
-              width: "45%",
-              borderRadius: "10px", 
+              width: { xs: "100%", md: "45%" },
+              marginRight: { xs: "7%", md: 0 },
+              borderRadius: "10px",
               boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
             }}
           ></Box>

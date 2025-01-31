@@ -67,6 +67,10 @@ export default function Navbar() {
     setAnchorElNav(null);
   };
 
+  const handleHome = () => {
+    navigate("/");
+  };
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     setAnchorElLanguage(null);
@@ -77,6 +81,7 @@ export default function Navbar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box
+            onClick={handleHome}
             component="img"
             src="/static/logo-agro.png"
             alt="Logo"
@@ -84,11 +89,13 @@ export default function Navbar() {
               height: "auto",
               width: "auto",
               display: { xs: "none", md: "flex" },
+              cursor: "pointer", 
             }}
           />
 
           {/* Icono con menu desplegable en mobile */}
           <Box
+            onClick={handleHome}
             component="img"
             src="/static/logo-agro.png"
             alt="Logo"
@@ -98,6 +105,7 @@ export default function Navbar() {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
+              cursor: "pointer",
             }}
           />
 
@@ -128,7 +136,14 @@ export default function Navbar() {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" } }}
             >
-              <MenuItem onClick={handleCloseNavMenu}>
+              <MenuItem
+                onClick={() => {
+                  handleCloseNavMenu();
+                  document
+                    .getElementById("descripcion")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 <Typography
                   sx={{
                     textAlign: "center",
@@ -188,7 +203,7 @@ export default function Navbar() {
                 aria-controls="language-menu"
                 aria-haspopup="true"
               >
-                <TranslateIcon />
+                <TranslateIcon sx={{color: "#598428"}} />
               </MenuItem>
               <Menu
                 id="language-menu"
@@ -205,13 +220,20 @@ export default function Navbar() {
                 }}
               >
                 <MenuItem onClick={() => changeLanguage("es")}>
-                  <Typography>{t("nav.es")}</Typography>
+                  <Typography color="#598428">{t("nav.es")}</Typography>
                 </MenuItem>
                 <MenuItem onClick={() => changeLanguage("pt")}>
-                  <Typography>{t("nav.pt")}</Typography>
+                  <Typography color="#598428">{t("nav.pt")}</Typography>
                 </MenuItem>
               </Menu>
-              <MenuItem onClick={handleCloseNavMenu}>
+              <MenuItem
+                onClick={() => {
+                  handleCloseNavMenu();
+                  document
+                    .getElementById("contacto")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 <Typography
                   sx={{
                     textAlign: "center",
@@ -232,7 +254,15 @@ export default function Navbar() {
             }}
           />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <Button className="nav-bar-btn" onClick={handleCloseNavMenu}>
+            <Button
+              className="nav-bar-btn"
+              onClick={() => {
+                handleCloseNavMenu();
+                document
+                  .getElementById("descripcion")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               {t("nav.nosotros")}
             </Button>
             <Button
@@ -258,16 +288,24 @@ export default function Navbar() {
               }}
             >
               <MenuItem onClick={() => handleNavigateProductsMenu("promotor")}>
-                <Typography>{t("nav.promotor")}</Typography>
+                <Typography color="#598428">{t("nav.promotor")}</Typography>
               </MenuItem>
               <MenuItem onClick={() => handleNavigateProductsMenu("biorhiza")}>
-                <Typography>{t("nav.biorhiza")}</Typography>
+                <Typography color="#598428">{t("nav.biorhiza")}</Typography>
               </MenuItem>
               <MenuItem onClick={() => handleNavigateProductsMenu("amin")}>
-                <Typography>{t("nav.amin")}</Typography>
+                <Typography color="#598428">{t("nav.amin")}</Typography>
               </MenuItem>
             </Menu>
-            <Button className="nav-bar-btn" onClick={handleCloseNavMenu}>
+            <Button
+              className="nav-bar-btn"
+              onClick={() => {
+                handleCloseNavMenu();
+                document
+                  .getElementById("contacto")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               {t("nav.contacto")}
             </Button>
             <Button
@@ -293,10 +331,10 @@ export default function Navbar() {
               }}
             >
               <MenuItem onClick={() => changeLanguage("es")}>
-                <Typography>{t("nav.es")}</Typography>
+                <Typography color="#598428">{t("nav.es")}</Typography>
               </MenuItem>
               <MenuItem onClick={() => changeLanguage("pt")}>
-                <Typography>{t("nav.pt")}</Typography>
+                <Typography color="#598428">{t("nav.pt")}</Typography>
               </MenuItem>
             </Menu>
           </Box>

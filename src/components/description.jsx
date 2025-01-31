@@ -12,13 +12,14 @@ const Description = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <Box>
+    <Box id="descripcion">
       <Typography className="description-title">
         {t("description.title")}
       </Typography>
       <Box
         sx={{
           display: "flex",
+          flexDirection: { xs: "column", md: "row" },
           justifyContent: "space-between",
           alignItems: "center",
           width: "100%",
@@ -33,7 +34,8 @@ const Description = () => {
           alt="Semicírculo decorativo"
           sx={{
             padding: 2,
-            width: "45%",
+            width: { xs: "100%", md: "45%" }, 
+            marginRight: {xs: "7%", md: 0},
             borderRadius: "10px", 
             boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
           }}
@@ -43,7 +45,9 @@ const Description = () => {
         <Box
           sx={{
             padding: 2,
-            width: "45%",
+            width: { xs: "100%", md: "45%" },
+            marginRight: {xs: "7%", md: 0},
+            textAlign: { xs: "center", md: "left" }, 
           }}
         >
           <Typography className="community-text-3">
@@ -60,6 +64,7 @@ const Description = () => {
       <Box
         sx={{
           display: "flex",
+          flexDirection: { xs: "column-reverse", md: "row" },
           justifyContent: "space-between",
           alignItems: "center",
           width: "100%",
@@ -71,7 +76,9 @@ const Description = () => {
         <Box
           sx={{
             padding: 2,
-            width: "45%",
+            width: { xs: "100%", md: "45%" },
+            marginRight: {xs: "7%", md: 0},
+            textAlign: { xs: "center", md: "left" },
           }}
         >
           <Typography className="community-text-3">
@@ -89,7 +96,8 @@ const Description = () => {
           alt="Semicírculo decorativo"
           sx={{
             padding: 2,
-            width: "45%",
+            width: { xs: "100%", md: "45%" },
+            marginRight: {xs: "7%", md: 0},
             borderRadius: "10px", 
             boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
           }}

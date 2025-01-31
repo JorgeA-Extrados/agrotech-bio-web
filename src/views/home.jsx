@@ -82,7 +82,7 @@ const Home = () => {
         <Description />
         <Products />
         <ProductsCard />
-        <Contact />
+        <Contact /> 
       </Container>
       <Footer />
       {/* Botón flotante Fab */}

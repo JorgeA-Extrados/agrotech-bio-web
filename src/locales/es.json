@@ -54,7 +54,22 @@
     "telefono": "Teléfono",
     "consulta": "Motivo de consulta",
     "mensaje": "Mensaje",
-    "enviar": "Enviar"
+    "enviar": "Enviar",
+    "error-1": "El Nombre es obligatorio",
+    "error-2": "El Correo es obligatorio",
+    "error-invalid-email": "Por favor, ingrese un correo válido.",
+    "error-3": "El Teléfono es obligatorio",
+    "error-4": "El Motivo de la Consulta es obligatorio",
+    "error-5": "El mensaje es obligatorio",
+    "what": "Consulta a AGROTECH-BIO",
+    "what-1": "¡Hola! Quisiera realizar una consulta. A continuación, te dejo mis datos:",
+    "what-2": "Nombre:",
+    "what-3": "Email:",
+    "what-4": "Teléfono:",
+    "what-5": "Motivo de la consulta:",
+    "what-6": "Mensaje adicional:",
+    "what-7": "Agradezco mucho tu respuesta y quedo atento a cualquier información adicional. ¡Gracias!",
+    "what-tel": "5493834400061"
   },
   "biorhiza": {
     "title": "BIORHIZA-ENDO",

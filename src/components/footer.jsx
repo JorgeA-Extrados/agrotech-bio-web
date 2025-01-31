@@ -17,7 +17,11 @@ const Footer = () => {
       >
         <Typography className="footer-text">©2019 by Agrotech-Bio.</Typography>
         <Typography>
-          <Link href="https://www.extrados.ar/" className="footer-web">
+          <Link
+              onClick={() => window.open("https://www.extrados.ar/", "_blank")}
+              className="footer-web"
+              style={{ cursor: "pointer" }}
+          >
             &nbsp; {t("footer.text")}
           </Link>
         </Typography>
