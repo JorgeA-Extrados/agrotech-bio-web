@@ -122,6 +122,7 @@
     "text": "Desarrollado por EXTRADOS Software Technology"
   },
   "whatsapp": {
-    "text": "Escríbenos"
+    "text": "Escríbenos",
+    "error-text": "Usted debe configurar la selección de idioma."
   }
 }

@@ -63,7 +63,7 @@ const Home = () => {
         console.error("Error obteniendo la geolocalización:", error.message);
 
         if (!coords) {
-          showError("Usted debe configurar la selección de idioma.");
+          showError(t("whatsapp.error-text"));
         }
       }
     );
