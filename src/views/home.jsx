@@ -118,7 +118,7 @@ const Home = () => {
   }, [coords]);
 
   const handleWhatsAppRedirect = () => {
-    const whatsappURL = `https://wa.me/5493834400061`;
+    const whatsappURL = `https://wa.me/${t("contact.what-tel")}`;
 
     window.open(whatsappURL, "_blank");
   };

@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 const AminGpb = () => {
   const { t } = useTranslation();
   const handleWhatsAppRedirect = () => {
-    const whatsappURL = `https://wa.me/5493834400061`; 
+    const whatsappURL = `https://wa.me/${t("contact.what-tel")}`; 
 
     window.open(whatsappURL, "_blank");
   };
