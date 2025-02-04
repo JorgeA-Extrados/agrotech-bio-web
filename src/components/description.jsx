@@ -33,10 +33,10 @@ const Description = () => {
           src="/static/agro-1.jpg"
           alt="Semicírculo decorativo"
           sx={{
-            padding: 2,
+            padding: { xs: 0, md: 2 },
             width: { xs: "100%", md: "45%" }, 
             marginRight: {xs: "7%", md: 0},
-            borderRadius: "10px", 
+            borderRadius:  { xs: "2px", md: "10px" }, 
             boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
           }}
         ></Box>
@@ -95,10 +95,10 @@ const Description = () => {
           src="/static/agro-2.jpeg"
           alt="Semicírculo decorativo"
           sx={{
-            padding: 2,
-            width: { xs: "100%", md: "45%" },
+            padding: { xs: 0, md: 2 },
+            width: { xs: "100%", md: "45%" }, 
             marginRight: {xs: "7%", md: 0},
-            borderRadius: "10px", 
+            borderRadius:  { xs: "2px", md: "10px" }, 
             boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
           }}
         ></Box>

@@ -74,7 +74,8 @@ const Products = () => {
         </Box>
         <Box
           sx={{
-            backgroundColor: "#A8D84D",
+            position: "relative",
+            overflow: "hidden",
             p: 4,
             my: 2,
             borderRadius: 2,
@@ -85,6 +86,20 @@ const Products = () => {
           data-aos-delay="300"
           data-aos-offset="0"
         >
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundImage: "url('/static/agro-7.webp')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              opacity: 0.2,
+              zIndex: 1,
+            }}
+          />
           <Typography
             className="products-text"
             dangerouslySetInnerHTML={{

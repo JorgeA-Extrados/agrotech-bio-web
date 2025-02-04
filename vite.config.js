@@ -10,10 +10,10 @@ export default defineConfig({
   optimizeDeps: {
     include: ["slick-carousel/slick/slick.css", "slick-carousel/slick/slick-theme.css", '@turf/turf', "@mui/lab/Timeline", "aos", "aos/dist/aos.css"]
   },
-  server: {
-    host: '0.0.0.0', // Permite conexiones externas
-    port: 5173, // Asegúrate de que coincida con el puerto de tu servidor
-    strictPort: true, // Para evitar que cambie el puerto
-    allowedHosts: ['.ngrok-free.app'], // Permite cualquier subdominio de ngrok
-  }
+  // server: {
+  //   host: '0.0.0.0', // Permite conexiones externas
+  //   port: 5173, // Asegúrate de que coincida con el puerto de tu servidor
+  //   strictPort: true, // Para evitar que cambie el puerto
+  //   allowedHosts: ['.ngrok-free.app'], // Permite cualquier subdominio de ngrok
+  // }
 })
