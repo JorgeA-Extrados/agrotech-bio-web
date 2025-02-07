@@ -49,7 +49,7 @@ const ProductsCard = () => {
             component="img"
             height="50%"
             width="50%"
-            image="/static/logo-png.png"
+            image="/static/test-logo-solo.png"
             alt={"BIORIZHA_ENDO"}
             sx={{ objectFit: "cover" }}
           />
@@ -82,7 +82,7 @@ const ProductsCard = () => {
             component="img"
             height="50%"
             width="50%"
-            image="/static/logo-png.png"
+            image="/static/test-logo-solo.png"
             alt={"PROMOTOR PLUS"}
             sx={{ objectFit: "cover" }}
           />
@@ -116,7 +116,7 @@ const ProductsCard = () => {
             component="img"
             height="50%"
             width="50%"
-            image="/static/logo-png.png"
+            image="/static/test-logo-solo.png"
             alt={"AMIN GPB"}
             sx={{ objectFit: "cover" }}
           />

@@ -30,14 +30,14 @@ const Description = () => {
         {/* Primer Box */}
         <Box
           component="img"
-          src="/static/agro-1.jpg"
+          src="/static/new-agro-3.jpg"
           alt="Semicírculo decorativo"
           sx={{
             padding: { xs: 0, md: 2 },
-            width: { xs: "100%", md: "45%" }, 
-            marginRight: {xs: "7%", md: 0},
-            borderRadius:  { xs: "2px", md: "10px" }, 
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
+            width: { xs: "100%", md: "45%" },
+            marginRight: { xs: "7%", md: 0 },
+            borderRadius: { xs: "2px", md: "10px" },
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
           }}
         ></Box>
 
@@ -46,8 +46,8 @@ const Description = () => {
           sx={{
             padding: 2,
             width: { xs: "100%", md: "45%" },
-            marginRight: {xs: "7%", md: 0},
-            textAlign: { xs: "center", md: "left" }, 
+            marginRight: { xs: "7%", md: 0 },
+            textAlign: { xs: "center", md: "left" },
           }}
         >
           <Typography className="community-text-3">
@@ -77,7 +77,7 @@ const Description = () => {
           sx={{
             padding: 2,
             width: { xs: "100%", md: "45%" },
-            marginRight: {xs: "7%", md: 0},
+            marginRight: { xs: "7%", md: 0 },
             textAlign: { xs: "center", md: "left" },
           }}
         >
@@ -87,19 +87,27 @@ const Description = () => {
             </span>{" "}
             {t("description.text-3")}
           </Typography>
+          {t("description.text-4") === " " ? null : (
+            <Typography className="community-text-4">
+            <span style={{ fontWeight: "bold", color: "#598428 " }}>
+              AGROTECH-BIO{" "}
+            </span>{" "}
+            {t("description.text-4")}
+          </Typography>
+          )}
         </Box>
 
         {/* Segundo Box */}
         <Box
           component="img"
-          src="/static/agro-2.jpeg"
+          src="/static/new-agro-1.jpg"
           alt="Semicírculo decorativo"
           sx={{
             padding: { xs: 0, md: 2 },
-            width: { xs: "100%", md: "45%" }, 
-            marginRight: {xs: "7%", md: 0},
-            borderRadius:  { xs: "2px", md: "10px" }, 
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
+            width: { xs: "100%", md: "45%" },
+            marginRight: { xs: "7%", md: 0 },
+            borderRadius: { xs: "2px", md: "10px" },
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
           }}
         ></Box>
       </Box>

@@ -3,12 +3,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Box, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const CarruselPrincipal = () => {
+  const { t } = useTranslation();
+
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -33,7 +36,7 @@ const CarruselPrincipal = () => {
           >
             <Box
               component="img"
-              src="/static/agro-1.jpg"
+              src="/static/shutterstock_2487565041.jpg"
               alt="Imagen 1"
               sx={{
                 width: "100%",
@@ -46,14 +49,14 @@ const CarruselPrincipal = () => {
                 position: "absolute",
                 bottom: "20px",
                 left: "20px",
-                backgroundColor: "rgba(89, 132, 40, 0.5)",
+                // backgroundColor: "rgba(89, 132, 40, 0.5)",
                 color: "white",
                 padding: "10px",
                 borderRadius: "5px",
               }}
             >
               <Typography className="carruselPrincipal-text">
-                AGROTECH-BIO
+                {t("carrusel-principal.text-img-1")}
               </Typography>
             </Box>
           </Box>
@@ -69,7 +72,7 @@ const CarruselPrincipal = () => {
           >
             <Box
               component="img"
-              src="/static/agro-2.jpeg"
+              src="/static/shutterstock_2332630751.jpg"
               alt="Imagen 2"
               sx={{
                 width: "100%",
@@ -82,14 +85,14 @@ const CarruselPrincipal = () => {
                 position: "absolute",
                 bottom: "20px",
                 left: "20px",
-                backgroundColor: "rgba(89, 132, 40, 0.5)",
+                //backgroundColor: "rgba(89, 132, 40, 0.5)",
                 color: "white",
                 padding: "10px",
                 borderRadius: "5px",
               }}
             >
               <Typography className="carruselPrincipal-text">
-                AGROTECH-BIO
+                {t("carrusel-principal.text-img-2")}
               </Typography>
             </Box>
           </Box>
@@ -105,7 +108,7 @@ const CarruselPrincipal = () => {
           >
             <Box
               component="img"
-              src="/static/agro-3.jpeg"
+              src="/static/shutterstock_2523972127.jpg"
               alt="Imagen 3"
               sx={{
                 width: "100%",
@@ -118,14 +121,50 @@ const CarruselPrincipal = () => {
                 position: "absolute",
                 bottom: "20px",
                 left: "20px",
-                backgroundColor: "rgba(89, 132, 40, 0.5)",
+                //backgroundColor: "rgba(89, 132, 40, 0.5)",
                 color: "white",
                 padding: "10px",
                 borderRadius: "5px",
               }}
             >
               <Typography className="carruselPrincipal-text">
-                AGROTECH-BIO
+                {t("carrusel-principal.text-img-3")}
+              </Typography>
+            </Box>
+          </Box>
+        </div>
+
+        <div>
+          <Box
+            sx={{
+              position: "relative",
+              width: "100%",
+              height: "400px",
+            }}
+          >
+            <Box
+              component="img"
+              src="/static/shutterstock_2489689987.jpg"
+              alt="Imagen 4"
+              sx={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+            <Box
+              sx={{
+                position: "absolute",
+                bottom: "20px",
+                left: "20px",
+                //backgroundColor: "rgba(89, 132, 40, 0.5)",
+                color: "white",
+                padding: "10px",
+                borderRadius: "5px",
+              }}
+            >
+              <Typography className="carruselPrincipal-text">
+                {t("carrusel-principal.text-img-4")}
               </Typography>
             </Box>
           </Box>

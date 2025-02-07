@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { useMediaQuery } from "@mui/material";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import TranslateIcon from "@mui/icons-material/Translate";
@@ -76,6 +76,19 @@ export default function Navbar() {
     setAnchorElLanguage(null);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (anchorElProducts) {
+        handleCloseProductsMenu();
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [anchorElProducts]);
+
   return (
     <AppBar position="static" className="nav-bar">
       <Container maxWidth="xl">
@@ -83,13 +96,13 @@ export default function Navbar() {
           <Box
             onClick={handleHome}
             component="img"
-            src="/static/logo-agro.png"
+            src="/static/NUEVO_LOGO.png"
             alt="Logo"
             sx={{
-              height: "auto",
+              height: "5.5rem",
               width: "auto",
               display: { xs: "none", md: "flex" },
-              cursor: "pointer", 
+              cursor: "pointer",
             }}
           />
 
@@ -97,12 +110,13 @@ export default function Navbar() {
           <Box
             onClick={handleHome}
             component="img"
-            src="/static/logo-agro.png"
+            src="/static/NUEVO_LOGO.png"
             alt="Logo"
             sx={{
-              height: "auto",
-              width: "auto",
-              mr: 2,
+              mt: 2,
+              height: { xs: "5.5rem" }, // Ajusta la altura según el tamaño de pantalla
+              maxWidth: { xs: "10rem" }, 
+              mr: 20,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               cursor: "pointer",
@@ -203,7 +217,7 @@ export default function Navbar() {
                 aria-controls="language-menu"
                 aria-haspopup="true"
               >
-                <TranslateIcon sx={{color: "#598428"}} />
+                <TranslateIcon sx={{ color: "#598428" }} />
               </MenuItem>
               <Menu
                 id="language-menu"

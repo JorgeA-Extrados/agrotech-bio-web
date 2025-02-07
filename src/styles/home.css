@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   font-family: Montserrat !important;
@@ -25,7 +26,8 @@
 }
 
 .carruselPrincipal-text {
-  font-size: 4rem !important;
+  font-family: "Bebas Neue", serif !important;
+  font-size: 6rem !important;
 }
 
 .products-text {
@@ -137,6 +139,14 @@
   font-size: 1rem !important;
   text-align: justify;
   margin-bottom: 1rem !important;
+}
+
+.promotor-text-card-2 {
+  color: #000 !important;
+  display: block !important;
+  font-size: 1rem !important;
+  text-align: justify;
+  margin-bottom: 3rem !important;
 } 
 
 /* Media Queries para Responsividad */
@@ -146,10 +156,15 @@
   }
 
   .carruselPrincipal-text {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
   }
 
   .description-title {
     font-size: 2.5rem !important;
+  }
+
+  .promotor-text-card-2 {
+    /* width: 90% !important; */
+    margin: 25px !important;
   }
 }

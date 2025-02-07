@@ -13,7 +13,8 @@
     "title": "QUIÉNES SOMOS",
     "text-1": "es una empresa dedicada a la investigación, producción y comercialización de bioinsumos para el agro, pensados no solo para mejorar la calidad y el rendimiento de los cultivos, sino también para mejorar el negocio agropecuario, la preservación del ambiente y la salud humana.",
     "text-2": "Trabajamos junto con nuestros clientes en todas las etapas productivas poniendo foco en sus necesidades para definir el paquete tecnológico más conveniente y desarrollar estrategias orientadas a mejorar la eficiencia del mismo y la rentabilidad del cultivo.",
-    "text-3": "cuenta con un equipo de profesionales e investigadores de gran trayectoria y experiencia tanto en laboratorio como a campo que le permite abordar nuevos desafíos como la inoculación múltiple o el desarrollo de nuevas técnicas para la producción de endomicorrizas. La fuerte y larga relación con el ámbito productivo y universitario le permite al equipo de profesionales estar en contacto con las nuevas tendencias y la investigación de punta."
+    "text-3": "cuenta con un equipo de profesionales e investigadores de gran trayectoria y experiencia tanto en laboratorio como a campo que le permite abordar nuevos desafíos como la inoculación múltiple o el desarrollo de nuevas técnicas para la producción de endomicorrizas. La fuerte y larga relación con el ámbito productivo y universitario le permite al equipo de profesionales estar en contacto con las nuevas tendencias y la investigación de punta.",
+    "text-4": " "
   },
   "products": {
     "title": "PRODUCTOS",
@@ -116,7 +117,15 @@
     "text-4": "Para su preparación:",
     "text-5": "Se debe diluir en agua en las dosis recomendadas en función del momento y forma de aplicación y de acuerdo al cultivo. En semilla: se puede aplicar solo o en forma conjunta con curasemillas o inocultantes según las dosis recomendadas de acuerdo al cultivo. Almacigo: Se aplica mediante riego con regaderas o a través de pulverizaciones foliares en las dosis recomendadas de acuerdo al cultivo y se pueden realizar una o más aplicaciones. Cultivos implantados: En cultivos implantados se aplica habitualmente en forma foliar y se pueden hacer una o más aplicaciones. También se puede aplicar a través del riego por goteo, en este caso las dosis son 30 a 50% mayores a las aplicaciones foliares.",
     "text-6": "Precaución: ",
-    "text-7": "Mantener fuera del alcance de los niños y animales. Usar elementos de protección. Seguir indicaciones de uso y aplicación. Conservar en ambiente fresco y oscuro. No mezclar con productos cúpricos para evitar posibles efectos fitotóxicos. En la mezcla de producto agregar al final. Ante dudas de compatibilidad es conveniente realizar una prueba previa en 20 litros de caldo para pulverizar."
+    "text-7": "Mantener fuera del alcance de los niños y animales. Usar elementos de protección. Seguir indicaciones de uso y aplicación. Conservar en ambiente fresco y oscuro. No mezclar con productos cúpricos para evitar posibles efectos fitotóxicos. En la mezcla de producto agregar al final. Ante dudas de compatibilidad es conveniente realizar una prueba previa en 20 litros de caldo para pulverizar.",
+    "title-nugen": " ",
+    "title-trion": " ",
+    "title-correctorF": " ",
+    "title-redec": " ",
+    "title-oilcoLB": " ",
+    "title-aon": " ",
+    "title-topclean": " ",
+    "title-sg55": " "
   },
   "footer": {
     "text": "Desarrollado por EXTRADOS Software Technology"
@@ -124,5 +133,11 @@
   "whatsapp": {
     "text": "Escríbenos",
     "error-text": "Usted debe configurar la selección de idioma."
+  },
+  "carrusel-principal": {
+    "text-img-1": "AGROTECH BIO",
+    "text-img-2": "BIOINSUMOS ORGÁNICOS PARA EL CAMPO",
+    "text-img-3": "FERTILIZANTES NATURALES",
+    "text-img-4": "ADJUVANTES"
   }
 }
