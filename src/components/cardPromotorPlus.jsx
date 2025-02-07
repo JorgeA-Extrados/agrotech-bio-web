@@ -30,7 +30,7 @@ const CardPromotorPlus = () => {
         {/* Primer Box */}
         <Box
           component="img"
-          src="/static/agro-1.jpg"
+          src="/static/agro-1.webp"
           alt="Semicírculo decorativo"
           sx={{
             padding: 2,
@@ -188,7 +188,7 @@ const CardPromotorPlus = () => {
         {/* Segundo Box */}
         <Box
           component="img"
-          src="/static/agro-2.jpeg"
+          src="/static/agro-2.webp"
           alt="Semicírculo decorativo"
           sx={{
             padding: 2,

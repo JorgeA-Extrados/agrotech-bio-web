@@ -29,7 +29,7 @@ const Biorhiza = () => {
         {/* Primer Box */}
         <Box
           component="img"
-          src="/static/agro-1.jpg"
+          src="/static/agro-1.webp"
           alt="Semicírculo decorativo"
           sx={{
             padding: 2,

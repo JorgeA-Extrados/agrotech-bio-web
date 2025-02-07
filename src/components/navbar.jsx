@@ -89,6 +89,21 @@ export default function Navbar() {
     };
   }, [anchorElProducts]);
 
+  const handleNavigateToSection = (sectionId) => {
+    if (window.location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        document
+          .getElementById(sectionId)
+          ?.scrollIntoView({ behavior: "smooth" });
+      }, 300); // Espera a que el home cargue antes de hacer scroll
+    } else {
+      document
+        .getElementById(sectionId)
+        ?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <AppBar position="static" className="nav-bar">
       <Container maxWidth="xl">
@@ -115,7 +130,7 @@ export default function Navbar() {
             sx={{
               mt: 2,
               height: { xs: "5.5rem" }, // Ajusta la altura según el tamaño de pantalla
-              maxWidth: { xs: "10rem" }, 
+              maxWidth: { xs: "10rem" },
               mr: 20,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
@@ -150,14 +165,7 @@ export default function Navbar() {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" } }}
             >
-              <MenuItem
-                onClick={() => {
-                  handleCloseNavMenu();
-                  document
-                    .getElementById("descripcion")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
+              <MenuItem onClick={() => handleNavigateToSection("descripcion")}>
                 <Typography
                   sx={{
                     textAlign: "center",
@@ -240,14 +248,7 @@ export default function Navbar() {
                   <Typography color="#598428">{t("nav.pt")}</Typography>
                 </MenuItem>
               </Menu>
-              <MenuItem
-                onClick={() => {
-                  handleCloseNavMenu();
-                  document
-                    .getElementById("contacto")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
+              <MenuItem onClick={() => handleNavigateToSection("contacto")}>
                 <Typography
                   sx={{
                     textAlign: "center",
@@ -270,12 +271,7 @@ export default function Navbar() {
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <Button
               className="nav-bar-btn"
-              onClick={() => {
-                handleCloseNavMenu();
-                document
-                  .getElementById("descripcion")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
+              onClick={() => handleNavigateToSection("descripcion")}
             >
               {t("nav.nosotros")}
             </Button>
@@ -313,12 +309,7 @@ export default function Navbar() {
             </Menu>
             <Button
               className="nav-bar-btn"
-              onClick={() => {
-                handleCloseNavMenu();
-                document
-                  .getElementById("contacto")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
+              onClick={() => handleNavigateToSection("contacto")}
             >
               {t("nav.contacto")}
             </Button>

@@ -11,12 +11,12 @@ const CarruselPrincipal = () => {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 1500, // Aumentar el tiempo de transición (más lento)
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
+    autoplaySpeed: 5000, // Aumentar el tiempo entre cada slide
+    cssEase: "ease-in-out", // Hace la animación más suave
     pauseOnHover: false,
   };
 
@@ -36,7 +36,7 @@ const CarruselPrincipal = () => {
           >
             <Box
               component="img"
-              src="/static/shutterstock_2487565041.jpg"
+              src="/static/shutterstock_2487565041.webp"
               alt="Imagen 1"
               sx={{
                 width: "100%",
@@ -72,7 +72,7 @@ const CarruselPrincipal = () => {
           >
             <Box
               component="img"
-              src="/static/shutterstock_2332630751.jpg"
+              src="/static/shutterstock_2332630751.webp"
               alt="Imagen 2"
               sx={{
                 width: "100%",
@@ -108,7 +108,7 @@ const CarruselPrincipal = () => {
           >
             <Box
               component="img"
-              src="/static/shutterstock_2523972127.jpg"
+              src="/static/shutterstock_2523972127.webp"
               alt="Imagen 3"
               sx={{
                 width: "100%",
@@ -144,7 +144,7 @@ const CarruselPrincipal = () => {
           >
             <Box
               component="img"
-              src="/static/shutterstock_2489689987.jpg"
+              src="/static/shutterstock_2489689987.webp"
               alt="Imagen 4"
               sx={{
                 width: "100%",

@@ -31,7 +31,7 @@ const AminGpbCard = () => {
         {/* Primer Box */}
         <Box
           component="img"
-          src="/static/agro-1.jpg"
+          src="/static/agro-1.webp"
           alt="Semicírculo decorativo"
           sx={{
             padding: 2,
@@ -136,7 +136,7 @@ const AminGpbCard = () => {
           {/* Segundo Box */}
           <Box
             component="img"
-            src="/static/agro-2.jpeg"
+            src="/static/agro-2.webp"
             alt="Semicírculo decorativo"
             sx={{
               padding: 2,
@@ -175,7 +175,7 @@ const AminGpbCard = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/nugen.png"
+              src="/static/nugen.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,
@@ -271,7 +271,7 @@ const AminGpbCard = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/trion.png"
+              src="/static/trion.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,
@@ -386,7 +386,7 @@ const AminGpbCard = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/correcto.png"
+              src="/static/correcto.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,
@@ -463,7 +463,7 @@ const AminGpbCard = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/redec.png"
+              src="/static/redec.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,
@@ -558,7 +558,7 @@ const AminGpbCard = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/oilcoLB.png"
+              src="/static/oilcoLB.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,
@@ -659,7 +659,7 @@ const AminGpbCard = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/aon.png"
+              src="/static/aon.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,
@@ -753,7 +753,7 @@ const AminGpbCard = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/topc.png"
+              src="/static/topc.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,
@@ -849,7 +849,7 @@ const AminGpbCard = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/nugen.png"
+              src="/static/nugen.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,
