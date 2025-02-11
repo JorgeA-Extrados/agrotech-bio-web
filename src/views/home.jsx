@@ -127,7 +127,7 @@ const Home = () => {
     <>
       <Navbar />
       <CarruselPrincipal />
-      <Container sx={{ marginTop: "5rem" }}>
+      <Container sx={{ marginTop: "5rem", marginBottom: "10rem" }}>
         <Description />
         <Products />
         <ProductsCard />

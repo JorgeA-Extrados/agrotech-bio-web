@@ -44,33 +44,74 @@ const Products = () => {
               zIndex: 1,
             }}
           />
-          <Typography
-            className="products-text"
-            dangerouslySetInnerHTML={{
-              __html: t("products.description.text1", {
-                brand: t("products.highlights.brand"),
-                pgpr: t("products.highlights.pgpr"),
-              }),
-            }}
-          />
-          <Typography
-            className="products-text"
-            dangerouslySetInnerHTML={{
-              __html: t("products.description.text2", {
-                bioestimulacion: t("products.highlights.bioestimulacion"),
-                biofertilizacion: t("products.highlights.biofertilizacion"),
-                bioproteccion: t("products.highlights.bioproteccion"),
-              }),
-            }}
-          />
-          <Typography
-            className="products-text"
-            dangerouslySetInnerHTML={{
-              __html: t("products.description.text3", {
-                promotorPlus: t("products.highlights.promotorPlus"),
-              }),
-            }}
-          />
+          {t("description.text-4") === " " ? (
+            <>
+              <Typography
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("products.description.text1", {
+                    brand: t("products.highlights.brand"),
+                    pgpr: t("products.highlights.pgpr"),
+                  }),
+                }}
+              />
+              <Typography
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("products.description.text2", {
+                    bioestimulacion: t("products.highlights.bioestimulacion"),
+                    biofertilizacion: t("products.highlights.biofertilizacion"),
+                    bioproteccion: t("products.highlights.bioproteccion"),
+                  }),
+                }}
+              />
+              <Typography
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("products.description.text3", {
+                    promotorPlus: t("products.highlights.promotorPlus"),
+                  }),
+                }}
+              />
+            </>
+          ) : (
+            <Box sx={{ textAlign: "center" }}>
+              <span className="products-text-important">
+                {t("biorhiza.title")}
+                <br />{" "}
+              </span>{" "}
+              <Typography
+                sx={{ textAlign: "justify" }}
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("biorhiza.text", {}),
+                }}
+              />
+              <Typography
+                sx={{ textAlign: "start" }}
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: `
+                          <span style="font-weight: bold; color: #598428;">
+                            ${t("biorhiza.title-list")}
+                            <br />
+                          </span>
+                          <ul>
+                            <li>${t("biorhiza.1-list")}</li>
+                            <li>${t("biorhiza.2-list")}</li>
+                            <li>${t("biorhiza.3-list")}</li>
+                            <li>${t("biorhiza.4-list")}</li>
+                            ${
+                              t("biorhiza.5-list") !== " "
+                                ? `<li>${t("biorhiza.5-list")}</li>`
+                                : ""
+                            }
+                          </ul>
+                        `,
+                }}
+              />
+            </Box>
+          )}
         </Box>
         <Box
           sx={{
@@ -100,36 +141,81 @@ const Products = () => {
               zIndex: 1,
             }}
           />
-          <Typography
-            className="products-text"
-            dangerouslySetInnerHTML={{
-              __html: t("products.product2.text1", {
-                brand: t("products.highlights.brand"),
-                biorhizaEndo: t("products.highlights.biorhizaEndo"),
-              }),
-            }}
-          />
-          <Typography
-            className="products-text"
-            dangerouslySetInnerHTML={{ __html: t("products.product2.text2") }}
-          />
-          <Typography
-            className="products-text"
-            dangerouslySetInnerHTML={{ __html: t("products.product2.text3") }}
-          />
-          <Typography
-            className="products-text"
-            dangerouslySetInnerHTML={{ __html: t("products.product2.text4") }}
-          />
-          <Typography
-            className="products-text"
-            dangerouslySetInnerHTML={{
-              __html: t("products.product2.text5", {
-                bioinsecticida: t("products.highlights.bioinsecticida"),
-                biofunguicida: t("products.highlights.biofunguicida"),
-              }),
-            }}
-          />
+          {t("description.text-4") === " " ? (
+            <>
+              <Typography
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("products.product2.text1", {
+                    brand: t("products.highlights.brand"),
+                    biorhizaEndo: t("products.highlights.biorhizaEndo"),
+                  }),
+                }}
+              />
+              <Typography
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("products.product2.text2"),
+                }}
+              />
+              <Typography
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("products.product2.text3"),
+                }}
+              />
+              <Typography
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("products.product2.text4"),
+                }}
+              />
+              <Typography
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("products.product2.text5", {
+                    bioinsecticida: t("products.highlights.bioinsecticida"),
+                    biofunguicida: t("products.highlights.biofunguicida"),
+                  }),
+                }}
+              />
+            </>
+          ) : (
+            <Box sx={{ textAlign: "center" }}>
+              <span className="products-text-important">
+                {t("promotor.title")}
+                <br />{" "}
+              </span>{" "}
+              <Typography
+                sx={{ textAlign: "justify" }}
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("promotor.text", {}),
+                }}
+              />
+              <Typography
+                sx={{ textAlign: "justify" }}
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("promotor.text-2", {}),
+                }}
+              />
+              <Typography
+                sx={{ textAlign: "justify" }}
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("promotor.text-3", {}),
+                }}
+              />
+              <Typography
+                sx={{ textAlign: "justify" }}
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("promotor.text-4", {}),
+                }}
+              />
+            </Box>
+          )}
         </Box>
         <Box
           sx={{
@@ -159,16 +245,56 @@ const Products = () => {
               zIndex: 1,
             }}
           />
-          <Typography
-            className="products-text"
-            dangerouslySetInnerHTML={{
-              __html: t("products.product3.text1", {
-                biofertilizacion: t("products.highlights.biofertilizacion"),
-                bioestimulacion: t("products.highlights.bioestimulacion"),
-                bioproteccion: t("products.highlights.bioproteccion"),
-              }),
-            }}
-          />
+          {t("description.text-4") === " " ? (
+            <>
+              <Typography
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("products.product3.text1", {
+                    biofertilizacion: t("products.highlights.biofertilizacion"),
+                    bioestimulacion: t("products.highlights.bioestimulacion"),
+                    bioproteccion: t("products.highlights.bioproteccion"),
+                  }),
+                }}
+              />
+            </>
+          ) : (
+            <Box sx={{ textAlign: "center" }}>
+              <span className="products-text-important">
+                {t("amin.title")}
+                <br />{" "}
+              </span>{" "}
+              <Typography
+                sx={{ textAlign: "justify" }}
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("amin.text", {}),
+                }}
+              />
+              <Typography
+                sx={{ textAlign: "start" }}
+                className="products-text"
+                dangerouslySetInnerHTML={{
+                  __html: `
+                          <span style="font-weight: bold; color: #598428;">
+                            ${t("amin.title-list")}
+                            <br />
+                          </span>
+                          <ul>
+                            <li>${t("amin.1-list")}</li>
+                            <li>${t("amin.2-list")}</li>
+                            <li>${t("amin.3-list")}</li>
+                            <li>${t("amin.4-list")}</li>
+                            <li>${t("amin.5-list")}</li>
+                            <li>${t("amin.6-list")}</li>
+                            <li>${t("amin.7-list")}</li>
+                            <li>${t("amin.8-list")}</li>
+                          </ul>
+                        `,
+                }}
+              />
+            </Box>
+          )}
         </Box>
       </Box>
     </>

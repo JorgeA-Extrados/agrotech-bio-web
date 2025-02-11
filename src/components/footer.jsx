@@ -12,15 +12,15 @@ const Footer = () => {
         sx={{
           justifyContent: "center",
           alignItems: "center",
-          padding: 2, 
+          padding: 2,
         }}
       >
         <Typography className="footer-text">©2019 by Agrotech-Bio.</Typography>
         <Typography>
           <Link
-              onClick={() => window.open("https://www.extrados.ar/", "_blank")}
-              className="footer-web"
-              style={{ cursor: "pointer" }}
+            onClick={() => window.open("https://www.extrados.ar/", "_blank")}
+            className="footer-web"
+            style={{ cursor: "pointer" }}
           >
             &nbsp; {t("footer.text")}
           </Link>

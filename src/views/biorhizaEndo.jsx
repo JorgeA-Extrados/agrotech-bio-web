@@ -16,7 +16,7 @@ const BiorhizaEndo = () => {
   return (
     <>
       <Navbar />
-      <Container sx={{ marginTop: "2rem" }}>
+      <Container sx={{ marginTop: "2rem", marginBottom: "10rem" }}>
         <Biorhiza />
       </Container>
       <Footer />

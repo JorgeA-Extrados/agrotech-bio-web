@@ -17,7 +17,7 @@ const Promotorplus = () => {
   return (
     <>
       <Navbar />
-      <Container sx={{ marginTop: "2rem" }}>
+      <Container sx={{ marginTop: "2rem", marginBottom: "9rem" }}>
         <CardPromotorPlus />
       </Container>
       <Footer />

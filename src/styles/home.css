@@ -5,6 +5,11 @@
   font-family: Montserrat !important;
 }
 
+body{
+  position: relative;
+  min-height: 100vh;
+}
+
 .nav-bar {
   background: #fff !important;
   padding-bottom: 0.5rem !important;
@@ -27,7 +32,7 @@
 
 .carruselPrincipal-text {
   font-family: "Bebas Neue", serif !important;
-  font-size: 6rem !important;
+  /* font-size: 7rem !important; */
 }
 
 .products-text {
@@ -102,6 +107,10 @@
   color: #fff;
   padding-bottom: 2;
   text-align: center;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-text {
@@ -153,10 +162,6 @@
 @media (max-width: 600px) {
   .nav-bar {
     padding-bottom: 1.5rem !important;
-  }
-
-  .carruselPrincipal-text {
-    font-size: 2.5rem !important;
   }
 
   .description-title {

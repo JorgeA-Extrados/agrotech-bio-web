@@ -31,7 +31,7 @@ const CarruselPrincipal = () => {
             sx={{
               position: "relative",
               width: "100%",
-              height: "400px",
+              height: { xs: "400px", sm: "400px", md: "500px", lg: "500px", xl: "600px" }, // Altura dinámica
             }}
           >
             <Box
@@ -55,7 +55,7 @@ const CarruselPrincipal = () => {
                 borderRadius: "5px",
               }}
             >
-              <Typography className="carruselPrincipal-text">
+              <Typography className="carruselPrincipal-text" sx={{fontSize: { xs: "2.5rem", sm: "2.5rem", md: "5rem", lg: "6rem", xl: "7rem" }}}>
                 {t("carrusel-principal.text-img-1")}
               </Typography>
             </Box>
@@ -67,7 +67,7 @@ const CarruselPrincipal = () => {
             sx={{
               position: "relative",
               width: "100%",
-              height: "400px",
+              height: { xs: "400px", sm: "400px", md: "500px", lg: "500px", xl: "600px" }, // Altura dinámica
             }}
           >
             <Box
@@ -91,7 +91,7 @@ const CarruselPrincipal = () => {
                 borderRadius: "5px",
               }}
             >
-              <Typography className="carruselPrincipal-text">
+              <Typography className="carruselPrincipal-text"  sx={{fontSize: { xs: "2.5rem", sm: "2.5rem", md: "5rem", lg: "6rem", xl: "7rem" }}}>
                 {t("carrusel-principal.text-img-2")}
               </Typography>
             </Box>
@@ -103,7 +103,7 @@ const CarruselPrincipal = () => {
             sx={{
               position: "relative",
               width: "100%",
-              height: "400px",
+              height: { xs: "400px", sm: "400px", md: "500px", lg: "500px", xl: "600px" }, // Altura dinámica
             }}
           >
             <Box
@@ -127,7 +127,7 @@ const CarruselPrincipal = () => {
                 borderRadius: "5px",
               }}
             >
-              <Typography className="carruselPrincipal-text">
+              <Typography className="carruselPrincipal-text"  sx={{fontSize: { xs: "2.5rem", sm: "2.5rem", md: "5rem", lg: "6rem", xl: "7rem" }}}>
                 {t("carrusel-principal.text-img-3")}
               </Typography>
             </Box>
@@ -139,7 +139,7 @@ const CarruselPrincipal = () => {
             sx={{
               position: "relative",
               width: "100%",
-              height: "400px",
+              height: { xs: "400px", sm: "400px", md: "500px", lg: "500px", xl: "600px" }, // Altura dinámica
             }}
           >
             <Box
@@ -163,7 +163,7 @@ const CarruselPrincipal = () => {
                 borderRadius: "5px",
               }}
             >
-              <Typography className="carruselPrincipal-text">
+              <Typography className="carruselPrincipal-text"  sx={{fontSize: { xs: "2.5rem", sm: "2.5rem", md: "5rem", lg: "6rem", xl: "7rem" }}}>
                 {t("carrusel-principal.text-img-4")}
               </Typography>
             </Box>
