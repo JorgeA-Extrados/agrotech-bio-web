@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import Navbar from "../../navbar";
-import { Box, Container, Fab, Typography } from "@mui/material";
-import Footer from "../../footer";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../footer";
+import Navbar from "../../navbar";
+import { Box, Container, Fab, Typography } from "@mui/material";
 
-const Promoto = () => {
+const Boracid = () => {
   const { t } = useTranslation();
   const handleWhatsAppRedirect = () => {
     const whatsappURL = `https://wa.me/${t("contact.what-tel")}`;
@@ -21,13 +21,19 @@ const Promoto = () => {
       navigate("/");
     }
   }, [t, navigate]); // Se ejecuta cuando `t` cambia
+
   return (
     <>
       <Navbar />
       <Container sx={{ marginTop: "2rem", marginBottom: "10rem" }}>
         <>
           <Typography className="promotor-title">
-            {t("promotor.promoto-title")}
+            {t("biorhiza.boracid-title")}
+            <br />
+            {t("biorhiza.boracid-sub-title")}
+            <br />
+            {t("biorhiza.boracid-sub-title-2")}
+            <br />
           </Typography>
 
           <Box
@@ -66,13 +72,19 @@ const Promoto = () => {
               <Typography
                 className="promotor-text"
                 dangerouslySetInnerHTML={{
-                  __html: t("promotor.promoto-text"),
+                  __html: t("biorhiza.boracid-text"),
                 }}
               />
               <Typography
                 className="promotor-text"
                 dangerouslySetInnerHTML={{
-                  __html: t("promotor.promoto-text-2"),
+                  __html: t("biorhiza.boracid-text-2"),
+                }}
+              />
+              <Typography
+                className="promotor-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("biorhiza.boracid-text-3"),
                 }}
               />
             </Box>
@@ -82,89 +94,68 @@ const Promoto = () => {
             className="promotor-text-card-2"
             dangerouslySetInnerHTML={{
               __html:
-                t("promotor.promoto-title-list") === " "
+                t("biorhiza.boracid-title-list") === " "
                   ? null
                   : `
-              <span style="font-weight: bold; color: #000; display: inline-block; margin-bottom: 15px;">
-                ${t("promotor.promoto-title-list")}
-                <br />
-              </span>
-              <ul>
-                <li>${t("promotor.promoto-1-list")}</li>
-                <li>${t("promotor.promoto-2-list")}</li>
-                <li>${t("promotor.promoto-3-list")}</li>
-                <li>${t("promotor.promoto-4-list")}</li>
-                <li>${t("promotor.promoto-5-list")}</li> 
-              </ul>
-            `,
+                <span style="font-weight: bold; color: #000; display: inline-block; margin-bottom: 15px;">
+                  ${t("biorhiza.boracid-title-list")}
+                  <br />
+                </span>
+                <ul>
+                  <li>${t("biorhiza.boracid-1-list")}</li>
+                  <li>${t("biorhiza.boracid-2-list")}</li>
+                  <li>${t("biorhiza.boracid-3-list")}</li>
+                  <li>${t("biorhiza.boracid-4-list")}</li>
+                  <li>${t("biorhiza.boracid-5-list")}</li> 
+                  <li>${t("biorhiza.boracid-6-list")}</li> 
+                  <li>${t("biorhiza.boracid-7-list")}</li> 
+                  <li>${t("biorhiza.boracid-8-list")}</li> 
+                  <li>${t("biorhiza.boracid-9-list")}</li> 
+                  <li>${t("biorhiza.boracid-10-list")}</li> 
+                </ul>
+              `,
             }}
           />
+
           <Typography
             sx={{ fontWeight: "bold", color: "#000" }}
             //className="promotor-text"
             dangerouslySetInnerHTML={{
-              __html: t("promotor.promoto-title-2"),
+              __html: t("biorhiza.boracid-title-2"),
             }}
           />
           <Typography
             className="promotor-text"
             dangerouslySetInnerHTML={{
-              __html: t("promotor.promoto-text-3"),
-            }}
-          />
-          <Typography
-            sx={{ fontWeight: "bold", color: "#000", marginTop: "2rem" }}
-            //className="promotor-text"
-            dangerouslySetInnerHTML={{
-              __html: t("promotor.promoto-title-list-2"),
+              __html: t("biorhiza.boracid-text-4"),
             }}
           />
           <Typography
             className="promotor-text"
             dangerouslySetInnerHTML={{
-              __html: t("promotor.promoto-text-4"),
+              __html: t("biorhiza.boracid-text-5"),
             }}
           />
+
           <Typography
+            sx={{ marginTop: "2rem" }}
             className="promotor-text-card-2"
             dangerouslySetInnerHTML={{
               __html:
-                t("promotor.promoto-title-list") === " "
+                t("biorhiza.boracid-title-list-2") === " "
                   ? null
                   : `
-              <ul>
-                <li>${t("promotor.promoto-6-list")}</li>
-                <li>${t("promotor.promoto-7-list")}</li>
-                <li>${t("promotor.promoto-8-list")}</li>
-              </ul>
-            `,
-            }}
-          />
-          <Typography
-            className="promotor-text-card-2"
-            dangerouslySetInnerHTML={{
-              __html:
-                t("promotor.promoto-title-list") === " "
-                  ? null
-                  : `
-              <span style="font-weight: bold; color: #000; display: inline-block; margin-bottom: 15px;">
-                ${t("promotor.promoto-title-list-3")}
-                <br />
-              </span>
+                <span style="font-weight: bold; color: #000; display: inline-block; margin-bottom: 15px;">
+                  ${t("biorhiza.boracid-title-list-2")}
                   <br />
-                ${t("promotor.promoto-9-list")}
-                  <br />
-                ${t("promotor.promoto-10-list")}
-                  <br />
-                ${t("promotor.promoto-11-list")}
-                  <br />
-                ${t("promotor.promoto-12-list")}
-                  <br />
-                ${t("promotor.promoto-13-list")} 
-                  <br />
-                ${t("promotor.promoto-14-list")} 
-                  <br />           
-            `,
+                </span>
+                <ul>
+                  <li>${t("biorhiza.boracid-11-list")}</li>
+                  <li>${t("biorhiza.boracid-12-list")}</li>
+                  <li>${t("biorhiza.boracid-13-list")}</li>
+                  <li>${t("biorhiza.boracid-14-list")}</li>
+                </ul>
+              `,
             }}
           />
         </>
@@ -190,4 +181,4 @@ const Promoto = () => {
   );
 };
 
-export default Promoto;
+export default Boracid;

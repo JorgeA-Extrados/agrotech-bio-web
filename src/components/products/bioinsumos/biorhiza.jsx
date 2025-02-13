@@ -86,7 +86,7 @@ const Biorhiza = () => {
                 t("promotor.biorhiza-title-list") === " "
                   ? null
                   : `
-              <span style="font-weight: bold; color: #598428; display: inline-block; margin-bottom: 15px;">
+              <span style="font-weight: bold; color: #000; display: inline-block; margin-bottom: 15px;">
                 ${t("promotor.biorhiza-title-list")}
                 <br />
               </span>

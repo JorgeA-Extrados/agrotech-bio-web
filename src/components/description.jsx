@@ -30,7 +30,7 @@ const Description = () => {
         {/* Primer Box */}
         <Box
           component="img"
-          src="/static/new-agro-3.webp"
+          src="/static/shutterstock_2471390919.webp"
           alt="Semicírculo decorativo"
           sx={{
             padding: { xs: 0, md: 2 },
@@ -100,7 +100,7 @@ const Description = () => {
         {/* Segundo Box */}
         <Box
           component="img"
-          src="/static/new-agro-1.webp"
+          src="/static/shutterstock_2499563593.webp"
           alt="Semicírculo decorativo"
           sx={{
             padding: { xs: 0, md: 2 },

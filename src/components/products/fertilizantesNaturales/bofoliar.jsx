@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import Navbar from "../../navbar";
-import { Box, Container, Fab, Typography } from "@mui/material";
-import Footer from "../../footer";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../footer";
+import Navbar from "../../navbar";
+import { Box, Container, Fab, Typography } from "@mui/material";
 
-const Amin = () => {
+const Bofoliar = () => {
   const { t } = useTranslation();
   const handleWhatsAppRedirect = () => {
     const whatsappURL = `https://wa.me/${t("contact.what-tel")}`;
@@ -21,13 +21,21 @@ const Amin = () => {
       navigate("/");
     }
   }, [t, navigate]); // Se ejecuta cuando `t` cambia
+
   return (
     <>
       <Navbar />
       <Container sx={{ marginTop: "2rem", marginBottom: "10rem" }}>
         <>
           <Typography className="promotor-title">
-            {t("promotor.amin-title")}
+            {t("biorhiza.bofoliar-title")}
+            <br />
+            {t("biorhiza.bofoliar-sub-title")}
+            <br />
+            {t("biorhiza.bofoliar-sub-title-2")}
+            <br />
+            {t("biorhiza.bofoliar-sub-title-3")}
+            <br />
           </Typography>
 
           <Box
@@ -66,7 +74,19 @@ const Amin = () => {
               <Typography
                 className="promotor-text"
                 dangerouslySetInnerHTML={{
-                  __html: t("promotor.amin-text"),
+                  __html: t("biorhiza.bofoliar-text"),
+                }}
+              />
+              <Typography
+                className="promotor-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("biorhiza.bofoliar-text-2"),
+                }}
+              />
+              <Typography
+                className="promotor-text"
+                dangerouslySetInnerHTML={{
+                  __html: t("biorhiza.bofoliar-text-3"),
                 }}
               />
             </Box>
@@ -76,105 +96,81 @@ const Amin = () => {
             className="promotor-text-card-2"
             dangerouslySetInnerHTML={{
               __html:
-                t("promotor.amin-title-list") === " "
+                t("biorhiza.bofoliar-title-list") === " "
                   ? null
                   : `
               <span style="font-weight: bold; color: #000; display: inline-block; margin-bottom: 15px;">
-                ${t("promotor.amin-title-list")}
+                ${t("biorhiza.bofoliar-title-list")}
                 <br />
               </span>
               <ul>
-                <li>${t("promotor.amin-1-list")}</li>
-                <li>${t("promotor.amin-2-list")}</li>
-                <li>${t("promotor.amin-3-list")}</li>
-                <li>${t("promotor.amin-4-list")}</li>
-                <li>${t("promotor.amin-5-list")}</li> 
+                <li>${t("biorhiza.bofoliar-1-list")}</li>
+                <li>${t("biorhiza.bofoliar-2-list")}</li>
+                <li>${t("biorhiza.bofoliar-3-list")}</li>
+                <li>${t("biorhiza.bofoliar-4-list")}</li>
+                <li>${t("biorhiza.bofoliar-5-list")}</li> 
+                <li>${t("biorhiza.bofoliar-6-list")}</li> 
+                <li>${t("biorhiza.bofoliar-7-list")}</li> 
+                <li>${t("biorhiza.bofoliar-8-list")}</li> 
+                <li>${t("biorhiza.bofoliar-9-list")}</li> 
               </ul>
-            `,
-            }}
-          />
-          <Typography
-            className="promotor-text-card-2"
-            dangerouslySetInnerHTML={{
-              __html:
-                t("promotor.amin-title-list-3") === " "
-                  ? null
-                  : `
-              <span style="font-weight: bold; color: #000; display: inline-block; margin-bottom: 15px;">
-                ${t("promotor.amin-title-list-3")}
-                <br />
-              </span>
-              <span style="display: inline-block; margin-bottom: 15px;">
-                ${t("promotor.amin-text-2")}
-                <br />
-              </span>
-              <ul>
-                <li>${t("promotor.amin-9-list")}</li>
-                <li>${t("promotor.amin-10-list")}</li>
-                <li>${t("promotor.amin-11-list")}</li>
-              </ul>
-              <span style="display: inline-block; margin-bottom: 15px; margin-top: 15px;">
-                ${t("promotor.amin-text-3")}
-                <br />
-              </span>
             `,
             }}
           />
 
           <Typography
-            className="promotor-text-card-2"
+            sx={{ fontWeight: "bold", color: "#000" }}
+            //className="promotor-text"
             dangerouslySetInnerHTML={{
-              __html:
-                t("promotor.amin-title-list-4") === " "
-                  ? null
-                  : `
-              <span style="font-weight: bold; color: #000; display: inline-block; margin-bottom: 15px;">
-                ${t("promotor.amin-title-list-4")}
-                <br />
-              </span>
-              <span style="display: inline-block; margin-bottom: 15px;">
-                ${t("promotor.amin-text-4")}
-                <br />
-              </span>
-              <ul>
-                <li>${t("promotor.amin-12-list")}</li>
-                <li>${t("promotor.amin-13-list")}</li>
-                <li>${t("promotor.amin-14-list")}</li>
-              </ul>
-              <span style="display: inline-block; margin-bottom: 15px; margin-top: 15px;">
-                ${t("promotor.amin-text-3")}
-                <br />
-              </span>
-            `,
+              __html: t("biorhiza.bofoliar-title-2"),
+            }}
+          />
+          <Typography
+            className="promotor-text"
+            dangerouslySetInnerHTML={{
+              __html: t("biorhiza.bofoliar-text-4"),
+            }}
+          />
+          <Typography
+            className="promotor-text"
+            dangerouslySetInnerHTML={{
+              __html: t("biorhiza.bofoliar-text-5"),
             }}
           />
 
           <Typography
+            sx={{ fontWeight: "bold", color: "#000", marginTop: "2rem" }}
+            //className="promotor-text"
+            dangerouslySetInnerHTML={{
+              __html: t("biorhiza.bofoliar-title-3"),
+            }}
+          />
+          <Typography
+            className="promotor-text"
+            dangerouslySetInnerHTML={{
+              __html: t("biorhiza.bofoliar-text-6"),
+            }}
+          />
+
+          <Typography
+            sx={{ marginTop: "2rem" }}
             className="promotor-text-card-2"
             dangerouslySetInnerHTML={{
               __html:
-                t("promotor.amin-title-list-5") === " "
+                t("biorhiza.bofoliar-title-list-3") === " "
                   ? null
                   : `
               <span style="font-weight: bold; color: #000; display: inline-block; margin-bottom: 15px;">
-                ${t("promotor.amin-title-list-5")}
+                ${t("biorhiza.bofoliar-title-list-3")}
                 <br />
               </span>
-                <br />
-                ${t("promotor.amin-15-list")}
-                <br />
-                ${t("promotor.amin-16-list")}
-                <br />
-                ${t("promotor.amin-17-list")}
-                <br />
-                ${t("promotor.amin-18-list")}
-                <br />
-                ${t("promotor.amin-19-list")} 
-                <br />
-                ${t("promotor.amin-20-list")} 
-                <br />
-                ${t("promotor.amin-21-list")} 
-                <br />              
+              <ul>
+                <li>${t("biorhiza.bofoliar-10-list")}</li>
+                <li>${t("biorhiza.bofoliar-11-list")}</li>
+                <li>${t("biorhiza.bofoliar-12-list")}</li>
+                <li>${t("biorhiza.bofoliar-13-list")}</li>
+                <li>${t("biorhiza.bofoliar-14-list")}</li>
+              </ul>
             `,
             }}
           />
@@ -201,4 +197,4 @@ const Amin = () => {
   );
 };
 
-export default Amin;
+export default Bofoliar;

@@ -10,6 +10,9 @@ export default defineConfig({
   optimizeDeps: {
     include: ["slick-carousel/slick/slick.css", "slick-carousel/slick/slick-theme.css", '@turf/turf', "@mui/lab/Timeline", "aos", "aos/dist/aos.css"]
   },
+  server: {
+    historyApiFallback: true, // Redirige rutas desconocidas a index.html
+  },
   // server: {
   //   host: '0.0.0.0', // Permite conexiones externas
   //   port: 5173, // Asegúrate de que coincida con el puerto de tu servidor

@@ -20,6 +20,9 @@ import Sg55 from "../components/products/adjuvantes/sg55";
 import Promoto from "../components/products/bioinsumos/promoto";
 import Biorhiza from "../components/products/bioinsumos/biorhiza";
 import Amin from "../components/products/bioinsumos/amin";
+import Bofoliar from "../components/products/fertilizantesNaturales/bofoliar";
+import Boulexita from "../components/products/fertilizantesNaturales/boulexita";
+import Boracid from "../components/products/fertilizantesNaturales/boracid";
 
 const AppRoutes = () => {
   return (
@@ -41,6 +44,10 @@ const AppRoutes = () => {
       <Route path="/bioinsumos/promoto" element={<Promoto />} />
       <Route path="/bioinsumos/biorhiza" element={<Biorhiza />} />
       <Route path="/bioinsumos/amin" element={<Amin />} />
+
+      <Route path="/biorhiza/bofoliar" element={<Bofoliar />} />
+      <Route path="/biorhiza/boracid" element={<Boracid />} />
+      <Route path="/biorhiza/boulexita" element={<Boulexita />} />
       {/* Ruta 404 */}
       <Route path="*" element={<ErrorNotFound />} />
     </Routes>

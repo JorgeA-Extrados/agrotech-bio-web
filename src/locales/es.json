@@ -81,7 +81,10 @@
     "2-list": " Incrementa la resistencia de las plantas a las diferentes condiciones de estrés biótico y abiótico.",
     "3-list": "Incrementa el volumen de exploración del suelo.",
     "4-list": "Mejora la disponibilidad de macro y micro nutrientes.",
-    "5-list": "Incrementa la absorción de macro y micronutrientes del suelo y favorece una nutrición equilibrada de los cultivos"
+    "5-list": "Incrementa la absorción de macro y micronutrientes del suelo y favorece una nutrición equilibrada de los cultivos",
+    "bofoliar-title": " ",
+    "boracid-title": " ",
+    "boulexita-title": " "
   },
   "promotor": {
     "title": "Promotor Plus",
