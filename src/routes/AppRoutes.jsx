@@ -23,6 +23,7 @@ import Amin from "../components/products/bioinsumos/amin";
 import Bofoliar from "../components/products/fertilizantesNaturales/bofoliar";
 import Boulexita from "../components/products/fertilizantesNaturales/boulexita";
 import Boracid from "../components/products/fertilizantesNaturales/boracid";
+import Bogran from "../components/products/fertilizantesNaturales/bogran";
 
 const AppRoutes = () => {
   return (
@@ -48,6 +49,7 @@ const AppRoutes = () => {
       <Route path="/biorhiza/bofoliar" element={<Bofoliar />} />
       <Route path="/biorhiza/boracid" element={<Boracid />} />
       <Route path="/biorhiza/boulexita" element={<Boulexita />} />
+      <Route path="/biorhiza/bogran" element={<Bogran />} />
       {/* Ruta 404 */}
       <Route path="*" element={<ErrorNotFound />} />
     </Routes>

@@ -17,6 +17,9 @@ const Biorhiza = () => {
     if (title === "boulexita") {
       navigate("/biorhiza/boulexita");
     }
+    if (title === "bogran") {
+      navigate("/biorhiza/bogran");
+    }
   };
   return (
     <Box>
@@ -91,6 +94,7 @@ const Biorhiza = () => {
           </Box>
         </>
       ) : (
+          <>
         <Grid2
           container
           spacing={4}
@@ -157,6 +161,13 @@ const Biorhiza = () => {
               </CardContent>
             </Card>
           </Grid2>
+        </Grid2>
+        <Grid2
+          container
+          spacing={4}
+          justifyContent="center"
+          sx={{ marginTop: "4rem", marginBottom: "4rem" }}
+        >
           <Grid2 item xs={12} sm={4}>
             <Card
               sx={{
@@ -176,8 +187,8 @@ const Biorhiza = () => {
                 component="img"
                 height="50%"
                 width="50%"
-                image="/static/correcto.webp"
-                alt={"Corrector F"}
+                image="/static/nugen.webp"
+                alt={"Nugen"}
                 sx={{ objectFit: "cover" }}
               />
               <CardContent>
@@ -187,7 +198,38 @@ const Biorhiza = () => {
               </CardContent>
             </Card>
           </Grid2>
+          <Grid2 item xs={12} sm={4}>
+            <Card
+              sx={{
+                maxWidth: 345,
+                minHeight: 480,
+                cursor: "pointer",
+                borderRadius: 2,
+                boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                transition: "transform 0.3s ease",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+              onClick={() => handleCardClick("bogran")}
+            >
+              <CardMedia
+                component="img"
+                height="50%"
+                width="50%"
+                image="/static/trion.webp"
+                alt={"Trion"}
+                sx={{ objectFit: "cover" }}
+              />
+              <CardContent>
+                <Typography className="products-card-title" align="center">
+                  {t("biorhiza.bogran-title")}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid2>
         </Grid2>
+          </>
       )}
     </Box>
   );
