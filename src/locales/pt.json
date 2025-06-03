@@ -7,7 +7,8 @@
     "amin": "Adjuvantes",
     "contacto": "Contato",
     "es": "Espanhol",
-    "pt": "Português"
+    "pt": "Português",
+    "logo": "/static/NUEVO_LOGO_BR.png"
   },
   "description": {
     "title": "QUEM SOMOS",

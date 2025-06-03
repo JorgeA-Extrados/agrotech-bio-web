@@ -71,14 +71,14 @@ const AminGpbCard = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/agro-1.webp"
+              src="/static/amin-gpb.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,
                 width: { xs: "100%", md: "45%" },
                 marginRight: { xs: "7%", md: 0 },
-                borderRadius: "10px",
-                boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                // borderRadius: "10px",
+                // boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
               }}
             ></Box>
 
@@ -141,53 +141,82 @@ const AminGpbCard = () => {
       )}
 
       {t("amin.text-2") === " " ? null : (
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: { xs: "column-reverse", md: "row" },
-            justifyContent: "space-between",
-            alignItems: "center",
-            width: "100%",
-            padding: 2,
-          }}
-        >
-          {/* Primer Box */}
-          <Box
-            sx={{
-              padding: 2,
-              width: { xs: "90%", md: "45%" },
-              marginRight: { xs: "7%", md: 0 },
-              textAlign: { xs: "center", md: "left" },
-            }}
-          >
-            <Typography className="promotor-text-card">
-              <span style={{ fontWeight: "bold", color: "#598428 " }}>
-                {t("amin.text-4")} <br />{" "}
-              </span>{" "}
-              {t("amin.text-5")}
-            </Typography>
-            <Typography className="promotor-text-card">
-              <span style={{ fontWeight: "bold", color: "#598428 " }}>
-                {t("amin.text-6")}
-                <br />{" "}
-              </span>{" "}
-              {t("amin.text-7")}
-            </Typography>
-          </Box>
+        // <Box
+        //   sx={{
+        //     display: "flex",
+        //     flexDirection: { xs: "column-reverse", md: "row" },
+        //     justifyContent: "space-between",
+        //     alignItems: "center",
+        //     width: "100%",
+        //     padding: 2,
+        //   }}
+        // >
+        //   {/* Primer Box */}
+        //   <Box
+        //     sx={{
+        //       padding: 2,
+        //       width: { xs: "90%", md: "45%" },
+        //       marginRight: { xs: "7%", md: 0 },
+        //       textAlign: { xs: "center", md: "left" },
+        //     }}
+        //   >
+        //     <Typography className="promotor-text-card">
+        //       <span style={{ fontWeight: "bold", color: "#598428 " }}>
+        //         {t("amin.text-4")} <br />{" "}
+        //       </span>{" "}
+        //       {t("amin.text-5")}
+        //     </Typography>
+        //     <Typography className="promotor-text-card">
+        //       <span style={{ fontWeight: "bold", color: "#598428 " }}>
+        //         {t("amin.text-6")}
+        //         <br />{" "}
+        //       </span>{" "}
+        //       {t("amin.text-7")}
+        //     </Typography>
+        //   </Box>
 
-          {/* Segundo Box */}
-          <Box
-            component="img"
-            src="/static/agro-2.webp"
-            alt="Semicírculo decorativo"
-            sx={{
-              padding: 2,
-              width: { xs: "100%", md: "45%" },
-              marginRight: { xs: "7%", md: 0 },
-              borderRadius: "10px",
-              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+        //   {/* Segundo Box */}
+        //   <Box
+        //     component="img"
+        //     src="/static/agro-2.webp"
+        //     alt="Semicírculo decorativo"
+        //     sx={{
+        //       padding: 2,
+        //       width: { xs: "100%", md: "45%" },
+        //       marginRight: { xs: "7%", md: 0 },
+        //       borderRadius: "10px",
+        //       boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+        //     }}
+        //   ></Box>
+        // </Box>
+        <Box>
+          <Typography
+            sx={{ fontWeight: "bold", color: "#598428", marginTop: 5 }}
+            //className="promotor-text"
+            dangerouslySetInnerHTML={{
+              __html: t("amin.text-4"),
             }}
-          ></Box>
+          />
+          <Typography
+            className="promotor-text"
+            dangerouslySetInnerHTML={{
+              __html: t("amin.text-5"),
+            }}
+          />
+
+          <Typography
+            sx={{ fontWeight: "bold", color: "#598428", marginTop: 5 }}
+            //className="promotor-text"
+            dangerouslySetInnerHTML={{
+              __html: t("amin.text-6"),
+            }}
+          />
+          <Typography
+            className="promotor-text"
+            dangerouslySetInnerHTML={{
+              __html: t("amin.text-7"),
+            }}
+          />
         </Box>
       )}
 

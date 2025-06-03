@@ -28,6 +28,8 @@ export default function Navbar() {
   const [anchorElProducts, setAnchorElProducts] = useState(null);
   const [anchorElLanguage, setAnchorElLanguage] = useState(null);
 
+  const [language, setLanguage] = useState(i18n.language || "es");
+
   const handleOpenProductsMenu = (event) => {
     setAnchorElProducts(event.currentTarget);
   };
@@ -73,6 +75,7 @@ export default function Navbar() {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    setLanguage(lng);
     setAnchorElLanguage(null);
   };
 
@@ -111,7 +114,7 @@ export default function Navbar() {
           <Box
             onClick={handleHome}
             component="img"
-            src="/static/NUEVO_LOGO.png"
+            src={t("nav.logo")}
             alt="Logo"
             sx={{
               height: "5.5rem",
@@ -125,7 +128,7 @@ export default function Navbar() {
           <Box
             onClick={handleHome}
             component="img"
-            src="/static/NUEVO_LOGO.png"
+            src={t("nav.logo")}
             alt="Logo"
             sx={{
               mt: 2,
@@ -225,7 +228,15 @@ export default function Navbar() {
                 aria-controls="language-menu"
                 aria-haspopup="true"
               >
-                <TranslateIcon sx={{ color: "#598428" }} />
+                {/* <TranslateIcon sx={{ color: "#598428" }} /> */}
+                <Box
+                  component="img"
+                  src={`/static/${
+                    i18n.language === "es" ? "ar.png" : "br.png"
+                  }`}
+                  alt={language}
+                  sx={{ width: "30%", height: "30%", borderRadius: "0%" }}
+                />
               </MenuItem>
               <Menu
                 id="language-menu"
@@ -319,7 +330,13 @@ export default function Navbar() {
               aria-controls="language-menu"
               aria-haspopup="true"
             >
-              <TranslateIcon />
+              {/* <TranslateIcon /> */}
+              <Box
+                component="img"
+                src={`/static/${i18n.language === "es" ? "ar.png" : "br.png"}`}
+                alt={language}
+                sx={{ width: "70%", height: "70%", borderRadius: "0%" }}
+              />
             </Button>
             <Menu
               id="language-menu"
@@ -336,9 +353,21 @@ export default function Navbar() {
               }}
             >
               <MenuItem onClick={() => changeLanguage("es")}>
+                <Box
+                  component="img"
+                  src="/static/ar.png"
+                  alt="AR"
+                  sx={{ width: 24, height: 16, mr: 1 }}
+                />
                 <Typography color="#598428">{t("nav.es")}</Typography>
               </MenuItem>
               <MenuItem onClick={() => changeLanguage("pt")}>
+                <Box
+                  component="img"
+                  src="/static/br.png"
+                  alt="PT"
+                  sx={{ width: 24, height: 16, mr: 1 }}
+                />
                 <Typography color="#598428">{t("nav.pt")}</Typography>
               </MenuItem>
             </Menu>

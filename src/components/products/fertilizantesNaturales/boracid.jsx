@@ -49,7 +49,7 @@ const Boracid = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/sg55.webp"
+              src="/static/Boracid.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,

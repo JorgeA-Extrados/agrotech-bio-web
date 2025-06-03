@@ -43,7 +43,7 @@ const Amin = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/sg55.webp"
+              src="/static/amin-gpb.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,

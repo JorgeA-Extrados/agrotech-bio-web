@@ -51,7 +51,7 @@ const Boulexita = () => {
               {/* Primer Box */}
               <Box
                 component="img"
-                src="/static/sg55.webp"
+                src="/static/boulexita.webp"
                 alt="Semicírculo decorativo"
                 sx={{
                   padding: 2,

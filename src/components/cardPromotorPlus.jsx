@@ -23,7 +23,7 @@ const CardPromotorPlus = () => {
     }
     if (title === "amin") {
       navigate("/bioinsumos/amin");
-    }   
+    }
   };
   return (
     <Box>
@@ -53,14 +53,14 @@ const CardPromotorPlus = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/agro-1.webp"
+              src="/static/promotor-plus.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,
                 width: { xs: "100%", md: "45%" },
                 marginRight: { xs: "7%", md: 0 },
-                borderRadius: "10px",
-                boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                // borderRadius: "10px",
+                // boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
               }}
             ></Box>
 
@@ -109,7 +109,7 @@ const CardPromotorPlus = () => {
               />
             </Box>
           </Box>
-          <Box
+          {/* <Box
             sx={{
               display: "flex",
               flexDirection: { xs: "column-reverse", md: "row" },
@@ -119,7 +119,6 @@ const CardPromotorPlus = () => {
               padding: 2,
             }}
           >
-            {/* Primer Box */}
             <Box
               sx={{
                 padding: 2,
@@ -154,8 +153,6 @@ const CardPromotorPlus = () => {
                 }}
               />
             </Box>
-
-            {/* Segundo Box */}
             <Box
               component="img"
               src="/static/agro-2.webp"
@@ -168,7 +165,35 @@ const CardPromotorPlus = () => {
                 boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
               }}
             ></Box>
-          </Box>
+          </Box> */}
+
+          <Typography
+            sx={{ fontWeight: "bold", color: "#598428", marginTop: 5 }}
+            //className="promotor-text"
+            dangerouslySetInnerHTML={{
+              __html: t("promotor.text-4"),
+            }}
+          />
+          <Typography
+            className="promotor-text"
+            dangerouslySetInnerHTML={{
+              __html: t("promotor.text-5"),
+            }}
+          />
+
+          <Typography
+            sx={{ fontWeight: "bold", color: "#598428", marginTop: 5 }}
+            //className="promotor-text"
+            dangerouslySetInnerHTML={{
+              __html: t("promotor.text-6"),
+            }}
+          />
+          <Typography
+            className="promotor-text"
+            dangerouslySetInnerHTML={{
+              __html: t("promotor.text-7"),
+            }}
+          />
         </>
       ) : (
         <Grid2
@@ -196,8 +221,8 @@ const CardPromotorPlus = () => {
                 component="img"
                 height="50%"
                 width="50%"
-                image="/static/nugen.webp"
-                alt={"Nugen"}
+                image="/static/promotor-plus.webp"
+                alt={"promotor-plus"}
                 sx={{ objectFit: "cover" }}
               />
               <CardContent>
@@ -226,7 +251,7 @@ const CardPromotorPlus = () => {
                 component="img"
                 height="50%"
                 width="50%"
-                image="/static/trion.webp"
+                image="/static/BIORHIZA.webp"
                 alt={"Trion"}
                 sx={{ objectFit: "cover" }}
               />
@@ -256,7 +281,7 @@ const CardPromotorPlus = () => {
                 component="img"
                 height="50%"
                 width="50%"
-                image="/static/correcto.webp"
+                image="/static/amin-gpb.webp"
                 alt={"Corrector F"}
                 sx={{ objectFit: "cover" }}
               />

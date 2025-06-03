@@ -48,14 +48,14 @@ const Biorhiza = () => {
             {/* Primer Box */}
             <Box
               component="img"
-              src="/static/agro-1.webp"
+              src="/static/BIORHIZA.webp"
               alt="Semicírculo decorativo"
               sx={{
                 padding: 2,
                 width: { xs: "100%", md: "45%" },
                 marginRight: { xs: "7%", md: 0 },
-                borderRadius: "10px",
-                boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                // borderRadius: "10px",
+                // boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
               }}
             ></Box>
 
@@ -120,8 +120,8 @@ const Biorhiza = () => {
                 component="img"
                 height="50%"
                 width="50%"
-                image="/static/nugen.webp"
-                alt={"Nugen"}
+                image="/static/bofoliar.webp"
+                alt={"bofoliar"}
                 sx={{ objectFit: "cover" }}
               />
               <CardContent>
@@ -150,8 +150,8 @@ const Biorhiza = () => {
                 component="img"
                 height="50%"
                 width="50%"
-                image="/static/trion.webp"
-                alt={"Trion"}
+                image="/static/Boracid.webp"
+                alt={"Boracid"}
                 sx={{ objectFit: "cover" }}
               />
               <CardContent>
@@ -187,7 +187,7 @@ const Biorhiza = () => {
                 component="img"
                 height="50%"
                 width="50%"
-                image="/static/nugen.webp"
+                image="/static/boulexita.webp"
                 alt={"Nugen"}
                 sx={{ objectFit: "cover" }}
               />
@@ -217,8 +217,8 @@ const Biorhiza = () => {
                 component="img"
                 height="50%"
                 width="50%"
-                image="/static/trion.webp"
-                alt={"Trion"}
+                image="/static/bogran.webp"
+                alt={"Bogran"}
                 sx={{ objectFit: "cover" }}
               />
               <CardContent>

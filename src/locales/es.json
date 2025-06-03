@@ -7,7 +7,8 @@
     "amin": "Amin GPB",
     "contacto": "Contacto",
     "es": "Español",
-    "pt": "Portugues"
+    "pt": "Portugues",
+    "logo": "/static/NUEVO_LOGO.png"
   },
   "description": {
     "title": "QUIÉNES SOMOS",
